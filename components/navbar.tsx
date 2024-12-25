@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const dataStructuresItems = [
   { href: "/arrays", label: "Arrays" },
-  { href: "/linkedlist", label: "Linked Lists" },
+  { href: "/linked", label: "Linked Lists" },
   { href: "/binary", label: "Binary Trees" },
   { href: "/graphs", label: "Graphs" },
   { href: "/stack", label: "Stacks" },
@@ -27,16 +27,16 @@ const algorithmItems = [
 ]
 
 const ProjectItems = [
-  { href: "/vector", label: "Vector" },
-  { href: "/bag", label: "Bag" },
-  { href: "/sequence", label: "Sequence" },
-  { href: "/statistician", label: "Statistician" },
-  { href: "/set", label: "Set" },
-  { href: "/stack", label: "Stack" },
-  { href: "/queue", label: "Queue" },
-  { href: "/binary", label: "Binary Tree" },
-  { href: "/bst", label: "Binary Search Tree" },
-  { href: "/heap", label: "Heap" }
+  { href: "/projects/vector", label: "Vector" },
+  { href: "/projects/bag", label: "Bag" },
+  { href: "/projects/sequence", label: "Sequence" },
+  { href: "/projects/statistician", label: "Statistician" },
+  { href: "/projects/set", label: "Set" },
+  { href: "/projects/stack", label: "Stack" },
+  { href: "/projects/queue", label: "Queue" },
+  { href: "/projects/binary", label: "Binary Tree" },
+  { href: "/projects/bst", label: "Binary Search Tree" },
+  { href: "/projects/heap", label: "Heap" }
 ]
 
 

@@ -114,10 +114,6 @@ private:
           <li>More memory per element</li>
         </ul>
       </section>
-
-      <footer className="mt-12 text-sm text-gray-600">
-        <p>Reference: "Data Structures and Other Objects Using C++" by Main & Savitch</p>
-      </footer>
     </div>
   );
 }

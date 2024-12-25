@@ -92,7 +92,7 @@ private:
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Important Concepts from Main & Savitch</h2>
+        <h2 className="text-2xl font-semibold mb-4">Important Concepts from Main &amp; Savitch</h2>
         <div className="space-y-4">
           <div className="border p-4 rounded-lg">
             <h3 className="font-semibold mb-2">Value Semantics</h3>
@@ -100,7 +100,7 @@ private:
             <ul className="list-disc pl-5">
               <li>Assignment operator creates a new copy</li>
               <li>Copy constructor creates an independent copy</li>
-              <li>Changes to one list don't affect copies</li>
+              <li>Changes to one list don&apos;t affect copies</li>
             </ul>
           </div>
 

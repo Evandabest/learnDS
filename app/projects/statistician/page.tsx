@@ -80,12 +80,6 @@ cout << "Max: " << s.maximum() << endl;     // 10.25`}</code>
         </pre>
       </section>
 
-      <footer className="mt-12 text-sm text-gray-600">
-        <p>
-          Based on the project from "Data Structures and Other Objects Using C++" 
-          by Michael Main and Walter Savitch
-        </p>
-      </footer>
     </div>
   );
 }

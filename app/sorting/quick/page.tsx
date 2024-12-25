@@ -8,7 +8,7 @@ export default function QuickSortPage() {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Overview</h2>
         <p className="text-gray-700 mb-4">
-          QuickSort is a divide-and-conquer algorithm that picks a 'pivot' element and partitions the array around it.
+          QuickSort is a divide-and-conquer algorithm that picks a &apos;pivot&apos; element and partitions the array around it.
         </p>
         <pre className="bg-gray-100 p-4 rounded-lg mb-4">
           <code>{`

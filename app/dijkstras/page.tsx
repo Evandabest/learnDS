@@ -5,12 +5,12 @@ import { PageNavigation } from "@/components/page-navigation";
 export default function DijkstrasPage() {
   return (
     <div className="max-w-4xl mx-auto p-8">
-      <h1 className="text-4xl font-bold mb-8">Dijkstra's Algorithm</h1>
+      <h1 className="text-4xl font-bold mb-8">Dijkstra&apos;s Algorithm</h1>
       
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">What is Dijkstra's Algorithm?</h2>
+        <h2 className="text-2xl font-semibold mb-4">What is Dijkstra&apos;s Algorithm?</h2>
         <p className="mb-4">
-          Dijkstra's algorithm finds the shortest path between nodes in a weighted graph. 
+          Dijkstra&apos;s algorithm finds the shortest path between nodes in a weighted graph. 
           It works by maintaining a set of unvisited nodes and continuously updating the 
           shortest distance to each node.
         </p>

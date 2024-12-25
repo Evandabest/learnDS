@@ -12,16 +12,23 @@ export async function POST(req: Request) {
     await writeFile(tempFile, code);
     
     // Compile and run
-    return new Promise((resolve) => {
+    const result = await new Promise<{stdout: string, stderr: string}>((resolve, reject) => {
       exec(`g++ ${tempFile} -o ${tempFile}.out && ${tempFile}.out`, 
         (error, stdout, stderr) => {
-          resolve(NextResponse.json({
-            output: stdout,
-            error: stderr
-          }));
+          if (error) {
+            reject(error);
+            return;
+          }
+          resolve({ stdout, stderr });
         });
     });
+    
+    return NextResponse.json({
+      output: result.stdout,
+      error: result.stderr
+    });
+
   } catch (error) {
-    return NextResponse.json({ error: 'Compilation failed' }, { status: 500 });
+    return NextResponse.json({ message: 'Compilation failed', error }, { status: 500 });
   }
 }

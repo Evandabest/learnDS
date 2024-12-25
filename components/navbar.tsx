@@ -57,7 +57,7 @@ const Navbar = () => {
             <HoverDropdown trigger="Data Structures" items={dataStructuresItems} />
             <HoverDropdown trigger="Algorithms" items={algorithmItems} />
             <HoverDropdown trigger="Projects" items={ProjectItems} />
-            <Link href="/code">Code</Link>
+            <Link className="flex-none text-sm" href="/code">Code</Link>
           </div>
         </div>
       </div>

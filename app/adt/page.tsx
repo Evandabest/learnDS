@@ -10,7 +10,7 @@ export default function ADTPage() {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">What is an ADT?</h2>
         <p className="mb-4">
-          Think of an ADT like a vending machine. You don't need to know how it works inside - 
+          Think of an ADT like a vending machine. You don&apos;t need to know how it works inside - 
           you just need to know what buttons to press to get your snack. Similarly, an ADT defines 
           what operations can be performed without showing how they are implemented.
         </p>
@@ -41,7 +41,7 @@ top = stack.peek();`}</code>
             <ul className="list-disc pl-5 mb-4">
               <li>Enqueue (join line)</li>
               <li>Dequeue (leave line)</li>
-              <li>Front (who's first)</li>
+              <li>Front (who&apos;s first)</li>
             </ul>
             <pre className="bg-gray-50 p-3 text-black rounded text-sm">
               <code>{`queue.enqueue(item);

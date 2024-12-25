@@ -113,10 +113,6 @@ bst.print();     // Prints sorted order`}</code>
           <li>In-order traversal gives sorted sequence</li>
         </ul>
       </section>
-
-      <footer className="mt-12 text-sm text-gray-600">
-        <p>Reference: "Data Structures and Other Objects Using C++" by Main & Savitch</p>
-      </footer>
     </div>
   );
 }

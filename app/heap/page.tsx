@@ -93,7 +93,7 @@ export default function HeapPage() {
         <ul className="list-disc pl-5 space-y-2">
           <li>Task scheduling in operating systems</li>
           <li>Event-driven simulation</li>
-          <li>Dijkstra's shortest path algorithm</li>
+          <li>Dijkstra&apos;s shortest path algorithm</li>
           <li>Job scheduling in printers</li>
           <li>Emergency room patient management</li>
           <li>Game AI for decision making</li>

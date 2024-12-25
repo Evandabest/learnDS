@@ -1,4 +1,3 @@
-import { PageNavigation } from "@/components/page-navigation"
 import Link from "next/link"
 
 export default function ProjectsPage() {

@@ -11,7 +11,7 @@ export default function BellmanFordPage() {
         <h2 className="text-2xl font-semibold mb-4">What is Bellman-Ford?</h2>
         <p className="mb-4">
           The Bellman-Ford algorithm finds shortest paths from a source vertex to all other vertices, 
-          even with negative edge weights (unlike Dijkstra's).
+          even with negative edge weights (unlike Dijkstra&apos;s).
         </p>
         <div className="bg-white p-4 rounded-lg shadow-sm mb-4">
           <pre className="text-center text-lg">

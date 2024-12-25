@@ -36,7 +36,7 @@ export default function CodePage() {
 
   return (
     <div className="p-4">
-      <h1 className="text-3xl font-bold mb-4">C++ Online Compiler</h1>
+      <h1 className="text-3xl  font-bold mb-4">Online C++ Compiler</h1>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="border rounded-lg overflow-hidden h-[600px]">

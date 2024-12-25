@@ -1,13 +1,11 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
-import { NavigationMenu, NavigationMenuItem, NavigationMenuList, NavigationMenuLink } from "@/components/ui/navigation-menu"
-import { BookOpen, Code, Brain, GitFork } from "lucide-react"
+import { BookOpen, Brain, GitFork } from "lucide-react"
+import Link from "next/link"
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-
-
       <main className="max-w-6xl mx-auto px-4 py-12">
         {/* Hero Section */}
         <section className="text-center mb-16">
@@ -17,8 +15,8 @@ export default function Home() {
           <p className="text-xl text-gray-600 mb-8">
             Learn Data Structures and Algorithms with C++
           </p>
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-            Get Started
+          <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <Link href="/classes">Get Started</Link>
           </Button>
         </section>
 
@@ -33,10 +31,10 @@ export default function Home() {
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-gray-600">
-                <li>• Arrays & Dynamic Arrays</li>
-                <li>• Linked Lists</li>
+                <li>• Arrays & Linked Lists</li>
+                <li>• Binary Trees & Graphs</li>
                 <li>• Stacks & Queues</li>
-                <li>• Trees & Graphs</li>
+                <li>• Heaps</li>
                 <li>• Hash Tables</li>
               </ul>
             </CardContent>
@@ -51,11 +49,11 @@ export default function Home() {
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-gray-600">
-                <li>• Searching Algorithms</li>
-                <li>• Sorting Algorithms</li>
-                <li>• Tree Traversals</li>
-                <li>• Graph Algorithms</li>
-                <li>• Dynamic Programming</li>
+                <li>• Bubble & Quick Sort</li>
+                <li>• Insertion & Selection Sort</li>
+                <li>• Merge Sort</li>
+                <li>• BFS & DFS</li>
+                <li>• Dijkstra &apos;s Algorithm</li>
               </ul>
             </CardContent>
           </Card>
@@ -69,11 +67,11 @@ export default function Home() {
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-gray-600">
-                <li>• Sequence Class</li>
-                <li>• Set Implementation</li>
-                <li>• Binary Search Tree</li>
-                <li>• Priority Queue</li>
-                <li>• Vector Implementation</li>
+                <li>• Vector & Bag</li>
+                <li>• Sequence & Set</li>
+                <li>• Stack & Queue</li>
+                <li>• Binary Trees & BST</li>
+                <li>• Heap Implementation</li>
               </ul>
             </CardContent>
           </Card>
@@ -87,16 +85,16 @@ export default function Home() {
               <CardHeader>
                 <CardTitle>Interactive Learning</CardTitle>
                 <CardDescription>
-                  Step-by-step explanations with visual examples
+                  Visual demonstrations and step-by-step guides
                 </CardDescription>
               </CardHeader>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle>Practice Problems</CardTitle>
+                <CardTitle>Comprehensive Projects</CardTitle>
                 <CardDescription>
-                  Exercises from the textbook with solutions
+                  10 complete data structure implementations
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -105,7 +103,7 @@ export default function Home() {
               <CardHeader>
                 <CardTitle>C++ Implementation</CardTitle>
                 <CardDescription>
-                  Complete source code and explanations
+                  Professional-grade code with documentation
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -113,5 +111,5 @@ export default function Home() {
         </section>
       </main>
     </div>
-  );
+  )
 }

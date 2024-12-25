@@ -160,10 +160,6 @@ tree.inorder(print_item);  // Prints: 12 25 37 50 75`}</code>
           </ul>
         </div>
       </section>
-
-      <footer className="mt-12 text-sm text-gray-600">
-        <p>Reference: "Data Structures and Other Objects Using C++" by Main & Savitch</p>
-      </footer>
     </div>
   );
 }

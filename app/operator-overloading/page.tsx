@@ -108,12 +108,6 @@ Matrix m3 = m1 * m2;`}</code>
         </pre>
       </section>
 
-      <footer className="mt-12 text-sm text-gray-600">
-        <p>
-          Reference: "Data Structures and Other Objects Using C++" 
-          by Michael Main and Walter Savitch
-        </p>
-      </footer>
     </div>
   );
 }

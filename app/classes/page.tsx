@@ -1,5 +1,6 @@
 'use client';
 
+import { PageNavigation } from '@/components/page-navigation';
 import { useRouter } from 'next/navigation';
 
 export default function ClassesPage() {
@@ -167,21 +168,22 @@ class Dog : public Animal {
         </pre>
       </section>
 
-      <section className="mb-8 text-center">
-        <button 
-          onClick={() => router.push('/projects/statistician')}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        >
-          View Statistician Class Project Example →
-        </button>
-      </section>
+      <PageNavigation 
+        nextPage={{
+          href: "/adt",
+          label: "Abstract Data Structures"
+        }}
+        relatedPages={[
+          { href: "/template", label: "Templates" },
+          { href: "/operator-overloading", label: "Operator Overloading" },
+        ]}
+        projects={[
+            { href: "/projects/vector", label: "Vector Implementation" },
+            { href: "/projects/statistician", label: "Statistician Class" },
+            { href: "/projects/bag", label: "Bag Class" },
+        ]}
+      />
 
-      <footer className="mt-12 text-sm text-gray-600">
-        <h3 className="font-semibold mb-2 text-white">Sources:</h3>
-        <ul className="list-disc pl-5">
-          <li className="text-white">Main, Michael & Savitch, Walter. "Data Structures and Other Objects Using C++"</li>
-        </ul>
-      </footer>
     </div>
   );
 }

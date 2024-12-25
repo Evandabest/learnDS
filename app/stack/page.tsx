@@ -1,5 +1,7 @@
 'use client';
 
+import { PageNavigation } from "@/components/page-navigation";
+
 export default function StackPage() {
   return (
     <div className="max-w-4xl mx-auto p-8">
@@ -140,9 +142,25 @@ Item top() const
         </div>
       </section>
 
-      <footer className="mt-12 text-sm text-gray-600">
-        <p>Reference: "Data Structures and Other Objects Using C++" by Main & Savitch</p>
-      </footer>
+      <PageNavigation
+        previousPage={{
+            href: "/queue",
+            label: "Queues"
+        }}
+        nextPage={{
+            href: "/binary",
+            label: "Binary Tree"
+        }}
+        relatedPages={[
+            { href: "/array", label: "Arrays" },
+            { href: "/linked", label: "Linked Lists" }
+
+        ]}
+        projects={[
+            { href: "/projects/stack", label: "Stack implementation" },
+            
+        ]}
+        />
     </div>
   );
 }

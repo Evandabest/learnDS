@@ -1,5 +1,7 @@
 'use client';
 
+import { PageNavigation } from "@/components/page-navigation";
+
 export default function BTreePage() {
   return (
     <div className="max-w-4xl mx-auto p-8">
@@ -116,9 +118,17 @@ public:
         </ul>
       </section>
 
-      <footer className="mt-12 text-sm text-gray-600">
-        <p>Reference: Database Management Systems</p>
-      </footer>
+      <PageNavigation
+              previousPage={{
+                  href: "/binary",
+                  label: "Binary Trees"
+              }}
+              nextPage={{
+                  href: "/heap",
+                  label: "Heaps"
+              }}
+              
+              />
     </div>
   );
 }

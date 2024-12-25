@@ -1,5 +1,7 @@
 'use client';
 
+import { PageNavigation } from "@/components/page-navigation";
+
 export default function ADTPage() {
   return (
     <div className="max-w-4xl mx-auto p-8">
@@ -89,6 +91,26 @@ value = dict.find(key);`}</code>
           <li>Make code more organized and maintainable</li>
         </ul>
       </section>
+
+      <PageNavigation 
+              previousPage={{
+                href: "/classes",
+                label: "Classes & Objects"
+              }}
+              nextPage={{
+                href: "/arrays",
+                label: "Arrays"
+              }}
+              relatedPages={[
+                { href: "/arrays/dynamic", label: "Dynamic Arrays" },
+                { href: "/linked", label: "Linked Lists" },
+              ]}
+              projects={[
+                  { href: "/projects/vector", label: "Vector Implementation" },
+                  { href: "/projects/bag", label: "Bag Class Implementation" },
+                  { href: "/projects/sequence/array", label: "Sequence Class Implementation" },
+              ]}
+            />
     </div>
   );
 }

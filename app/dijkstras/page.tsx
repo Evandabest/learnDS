@@ -1,5 +1,7 @@
 'use client';
 
+import { PageNavigation } from "@/components/page-navigation";
+
 export default function DijkstrasPage() {
   return (
     <div className="max-w-4xl mx-auto p-8">
@@ -117,6 +119,23 @@ export default function DijkstrasPage() {
           <li>Games pathfinding</li>
         </ul>
       </section>
+
+      <PageNavigation
+        previousPage={{
+            href: "/traversal/preorder",
+            label: "Preorder Traversal"
+        }}
+        nextPage={{
+            href: "/dijkstras/bellmonford",
+            label: "Bellman-Ford Algorithm"
+        }}
+        relatedPages={[
+            { href: "/binary", label: "Binary Trees" },
+            { href: "/graphs", label: "Graphs" },
+            { href: "/traversal/preorder", label: "Preorder traversal" },
+            { href: "/traversal/bfs", label: "Breadth-First Search" },
+        ]}
+        />
     </div>
   );
 }

@@ -1,5 +1,7 @@
 'use client';
 
+import { PageNavigation } from "@/components/page-navigation";
+
 export default function HeapPage() {
   return (
     <div className="max-w-4xl mx-auto p-8">
@@ -115,6 +117,24 @@ export default function HeapPage() {
           </ul>
         </div>
       </section>
+      <PageNavigation
+        previousPage={{
+            href: "/btree",
+            label: "B-Trees"
+        }}
+        nextPage={{
+            href: "/graphs",
+            label: "Graphs"
+        }}
+        relatedPages={[
+            { href: "/linked/doubly", label: "Doubly Linked Lists" },
+            { href: "/binary", label: "Binary Trees" },
+        ]}
+        projects={[
+            { href: "/projects/heap", label: "Heap implementation" },
+            
+        ]}
+        />
     </div>
   );
 }

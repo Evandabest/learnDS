@@ -1,5 +1,7 @@
 'use client';
 
+import { PageNavigation } from "@/components/page-navigation";
+
 export default function BubbleSortPage() {
   return (
     <div className="max-w-4xl mx-auto p-8">
@@ -76,6 +78,23 @@ Final:    [1, 2, 4, 5, 8]`}</code>
           <li>Poor performance on large datasets</li>
         </ul>
       </section>
+
+      <PageNavigation
+        previousPage={{
+            href: "/recursion",
+            label: "Recursion"
+        }}
+        nextPage={{
+            href: "/sorting/insert",
+            label: "Insertion Sort"
+        }}
+        relatedPages={[
+            { href: "/arrays", label: "Arrays" },
+            { href: "/sorting/quick", label: "Quick Sort" },
+            { href: "/sorting/merge", label: "Merge Sort" },
+            { href: "/sorting/select", label: "selection Sort" },
+        ]}
+        />
     </div>
   );
 }

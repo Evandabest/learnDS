@@ -1,5 +1,7 @@
 'use client';
 
+import { PageNavigation } from "@/components/page-navigation";
+
 export default function LinkedListPage() {
   return (
     <div className="max-w-4xl mx-auto p-8">
@@ -227,9 +229,26 @@ void remove_current()
         </div>
       </section>
       
-      <footer className="mt-12 text-sm text-gray-600">
-        <p>Reference: "Data Structures and Other Objects Using C++" by Michael Main and Walter Savitch</p>
-      </footer>
+      <PageNavigation
+        previousPage={{
+            href: "/arrays/dynamic",
+            label: "Dynamic Arrays"
+        }}
+        nextPage={{
+            href: "/queue",
+            label: "Queues"
+        }}
+        relatedPages={[
+            { href: "/linked/circular", label: "Circular Linked List" },
+            { href: "/linked/doubly", label: "Doubly Linked List" },
+            { href: "/stack", label: "Stack" },
+            { href: "/binary", label: "Binary Trees" }
+        ]}
+        projects={[
+            { href: "/projects/sequence/linked", label: "Sequence class implementation (linked)" },
+            { href: "/projects/binary", label: "Binary Tree implementation" }
+        ]}
+        />
     </div>
   );
 }

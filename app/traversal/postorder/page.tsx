@@ -1,5 +1,7 @@
 'use client';
 
+import { PageNavigation } from "@/components/page-navigation";
+
 export default function PostorderTraversalPage() {
   return (
     <div className="max-w-4xl mx-auto p-8">
@@ -97,9 +99,26 @@ void postorder(binary_tree_node<Item>* root) {
         </div>
       </section>
 
-      <footer className="mt-12 text-sm text-gray-600">
-        <p>Reference: "Data Structures and Other Objects Using C++" by Main & Savitch</p>
-      </footer>
+      <PageNavigation
+        previousPage={{
+            href: "/traversal/inorder",
+            label: "Inorder Traversal"
+        }}
+        nextPage={{
+            href: "/traversal/preorder",
+            label: "Preorder Traversal"
+        }}
+        relatedPages={[
+            { href: "/binary", label: "Binary Trees" },
+            { href: "/traversal/inorder", label: "Inorder traversal" },
+            { href: "/traversal/bfs", label: "Breadth-First Search" },
+            { href: "/dijkstras", label: "Dijkstras Algorithm" },
+        ]}
+        projects={[
+            { href: "/projects/bst", label: "Binary Search Tree" }
+        ]}
+      
+        />
     </div>
   );
 }

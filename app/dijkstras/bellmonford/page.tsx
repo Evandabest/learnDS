@@ -1,5 +1,7 @@
 'use client';
 
+import { PageNavigation } from "@/components/page-navigation";
+
 export default function BellmanFordPage() {
   return (
     <div className="max-w-4xl mx-auto p-8">
@@ -127,9 +129,22 @@ export default function BellmanFordPage() {
         </ul>
       </section>
 
-      <footer className="mt-12 text-sm text-gray-600">
-        <p>Reference: Introduction to Algorithms by Cormen, Leiserson, Rivest, and Stein</p>
-      </footer>
+      <PageNavigation
+        previousPage={{
+            href: "/dijkstras",
+            label: "Dijkstra's Algorithm"
+        }}
+        nextPage={{
+            href: "/recursion",
+            label: "recursion"
+        }}
+        relatedPages={[
+            { href: "/binary", label: "Binary Trees" },
+            { href: "/graphs", label: "Graphs" },
+            { href: "/traversal/preorder", label: "Preorder traversal" },
+            { href: "/traversal/bfs", label: "Breadth-First Search" },
+        ]}
+        />
     </div>
   );
 }

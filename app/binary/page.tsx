@@ -1,5 +1,7 @@
 'use client';
 
+import { PageNavigation } from "@/components/page-navigation";
+
 export default function BinaryTreePage() {
   return (
     <div className="max-w-4xl mx-auto p-8">
@@ -137,9 +139,26 @@ void postorder(binary_tree_node* root);`}</code>
         </div>
       </section>
 
-      <footer className="mt-12 text-sm text-gray-600">
-        <p>Reference: "Data Structures and Other Objects Using C++" by Main & Savitch</p>
-      </footer>
+      <PageNavigation
+              previousPage={{
+                  href: "/stack",
+                  label: "Stacks"
+              }}
+              nextPage={{
+                  href: "/btree",
+                  label: "B-Trees"
+              }}
+              relatedPages={[
+                  { href: "/linked", label: "Linked Lists" },
+                  { href: "/linked/doubly", label: "Doubly Linked Lists" },
+              ]}
+              projects={[
+                  { href: "/projects/binary", label: "Binary Tree implementation" },
+                  { href: "/projects/bst", label: "Binary Search Tree" },
+                  { href: "/projects/heap", label: "Heap implementation" },
+                  
+              ]}
+              />
     </div>
   );
 }

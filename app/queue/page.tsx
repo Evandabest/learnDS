@@ -1,5 +1,7 @@
 'use client';
 
+import { PageNavigation } from "@/components/page-navigation";
+
 export default function QueuePage() {
   return (
     <div className="max-w-4xl mx-auto p-8">
@@ -127,9 +129,25 @@ Item front() const
         </div>
       </section>
 
-      <footer className="mt-12 text-sm text-gray-600">
-        <p>Reference: "Data Structures and Other Objects Using C++" by Main & Savitch</p>
-      </footer>
+      <PageNavigation
+        previousPage={{
+            href: "/linked",
+            label: "Linked List"
+        }}
+        nextPage={{
+            href: "/stack",
+            label: "stacks"
+        }}
+        relatedPages={[
+            { href: "/array", label: "Arrays" },
+            { href: "/array/circular", label: "Circular Arrays" },
+            { href: "/linked/circular", label: "Circular Linked Lists" },
+        ]}
+        projects={[
+            { href: "/projects/queue", label: "Queue implementation" },
+            
+        ]}
+        />
     </div>
   );
 }

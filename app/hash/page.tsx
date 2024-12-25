@@ -1,5 +1,7 @@
 'use client';
 
+import { PageNavigation } from "@/components/page-navigation";
+
 export default function HashPage() {
   return (
     <div className="max-w-4xl mx-auto p-8">
@@ -123,10 +125,17 @@ size_type hash(double key) {
           </ul>
         </div>
       </section>
-
-      <footer className="mt-12 text-sm text-gray-600">
-        <p>Reference: "Data Structures and Other Objects Using C++" by Main & Savitch</p>
-      </footer>
+      
+      <PageNavigation
+        previousPage={{
+            href: "/sorting/merge",
+            label: "Merge sort"
+        }}
+        relatedPages={[
+            { href: "/arrays", label: "Arrays" },
+            
+        ]}
+        />      
     </div>
   );
 }
